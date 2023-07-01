@@ -1,0 +1,181 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("https://cdn.dribbble.com/users/211312/screenshots/6007441/media/7d6980a6196b3d9832336aac15c88d68.jpg") ;
+    background-size: cover;
+    background-position: fixed;
+    overflow-x: hidden;
+}
+.container
+{
+    display: grid;
+    width: 100vw;
+}
+.main_frame
+{
+    display: flex;
+    place-content: end;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.main_frame .content
+{
+    width: 40vw;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    margin: 5vw;
+    filter: brightness(100%);
+    font-size: 3vh;
+    color: white;
+}
+.main_frame .image
+{
+    width: 60vw;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+.main_frame .content h1
+{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    text-align: center;
+}
+.main_frame .content h1 span
+{
+    color:violet;
+}
+.skill_proj
+{
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    place-content: center;
+    place-items: center ;
+    padding: 2vh;
+    border-bottom: 3px solid black;
+}
+.skill_proj .project
+{
+    width: 35vw;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    border-right: 3px solid black;
+}
+.skill_proj .project h1 
+{
+    margin-bottom: 2vh ;
+}
+.skill_proj .project ul li 
+{
+    margin: 2vh;
+}
+.skill_proj .skill 
+{
+    width: 35vw;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+.skill_proj .skill table tr td
+{
+    padding: 2vh;
+}
+.education
+{
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    padding: 2vw;
+    place-content: center;
+    place-items: center;
+}
+.education .feature 
+{
+    margin: 1vw;
+}
+.education .feature table
+{
+    border: 5px solid black;
+    padding: 2vw;
+}
+.education .feature table tr , td 
+{
+    padding: 2vh;
+}
+.certify
+{
+    width: 100vw;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    background-color: white;
+    padding: 2vh;
+}
+.certify h1
+{
+    width: 35vw;
+}
+.certify .feature1 ul li
+{
+    padding: 2vw;
+}
+@media only screen and (max-width: 800px) {
+    .main_frame
+    {
+        display: grid;
+        place-content: center;
+        font-size: 3vh ;
+    }
+    .main_frame .image
+    {
+        display: grid;
+        place-content: center;
+        place-items: center;
+    }
+    .main_frame .image img 
+    {
+        width: 80%;
+        height: 80%;
+    }
+    .main_frame .content
+    {
+        display: grid;
+        place-items: center;
+        place-content: center;
+        margin: auto;
+    }
+    .skill_proj
+    {
+        display: grid;
+    }
+    .skill_proj .project
+    {
+        border: none;
+        border-bottom: 3px solid black;
+        padding: 1vh ;
+        width: 100vw;
+    }
+    .skill_proj .skill
+    {
+        padding: 1vh ;
+    }
+    .education
+    {
+        display: grid;
+        width: 100vw;
+        padding: 4vw;
+    }
+    .certify
+    {
+        display: grid;
+    }
+  }
